@@ -15,8 +15,8 @@ workdir app
 
 copy --from=Base /app . 
 
-COPY frontend/.env .env.local
+COPY .env .env.local
 
 EXPOSE 5173
 
-CMD [ "npm" "run" "dev" ]
+CMD [ "npm", "run", "dev" ]
